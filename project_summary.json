@@ -1,0 +1,138 @@
+{
+  "project_name": "CI Pipeline Intelligent Validator",
+  "version": "1.0.0",
+  "description": "ML-powered pre-execution validation for CI/CD pipelines",
+  "created_date": "2026-02-06T10:35:18.963345",
+  "components": {
+    "validators": [
+      "JSONSyntaxValidator",
+      "JSONSchemaValidator",
+      "JSONContentAnalyzer"
+    ],
+    "ml": [
+      "FeatureExtractor",
+      "MLRiskPredictor",
+      "RiskScoringEngine"
+    ],
+    "integration": [
+      "CIPipelineValidator",
+      "CIPipelineOrchestrator",
+      "ReportGenerator"
+    ]
+  },
+  "features": [
+    "Rule-based JSON validation",
+    "ML-based risk prediction",
+    "Weighted risk scoring",
+    "Multi-format reports (Text, HTML, JSON)",
+    "Batch directory validation",
+    "CI/CD integration ready",
+    "CLI interface"
+  ],
+  "risk_levels": {
+    "LOW": {
+      "range": "0-30",
+      "action": "PROCEED"
+    },
+    "MEDIUM": {
+      "range": "31-60",
+      "action": "REVIEW"
+    },
+    "HIGH": {
+      "range": "61-100",
+      "action": "STOP"
+    }
+  },
+  "files": {
+    "main": [
+      "pipeline.py",
+      "__init__.py",
+      "config.json"
+    ],
+    "cli": [
+      "ci_validator_cli.py"
+    ],
+    "docs": [
+      "README.md",
+      "requirements.txt"
+    ],
+    "examples": [
+      "integration_examples.py",
+      "demo.py"
+    ]
+  },
+  "statistics": {
+    "files_validated": 418,
+    "files_passed": 412,
+    "files_failed": 6,
+    "high_risk_count": 0
+  },
+  "test_results": {
+    "total_tests": 12,
+    "passed": 12,
+    "failed": 0,
+    "pass_rate": 100.0,
+    "results": [
+      {
+        "test": "Validator Exists",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Orchestrator Exists",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Validate Valid File",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Validate Corrupted File",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Validate Non-existent File",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Batch Validation",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Quick Check Valid",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Quick Check Non-existent",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Run History Tracking",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Stats Tracking",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Risk Levels Valid",
+        "status": "PASS",
+        "details": true
+      },
+      {
+        "test": "Component Scores Present",
+        "status": "PASS",
+        "details": true
+      }
+    ]
+  }
+}
