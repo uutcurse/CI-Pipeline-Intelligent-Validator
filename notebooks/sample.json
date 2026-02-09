@@ -1,0 +1,11 @@
+{
+  "stages": [
+    {
+      "name": "build",
+      "jobs": ["compile", "test"]
+    }
+  ],
+  "variables": {
+    "ENV": "prod"
+  }
+}

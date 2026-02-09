@@ -1,0 +1,15 @@
+{
+  "pipeline_name": "test-pipeline",
+  "version": "1.0.1",
+  "stages": [
+    {
+      "name": "test",
+      "type": "test",
+      "timeout": 120
+    }
+  ],
+  "settings": {
+    "environment": "staging",
+    "notify": false
+  }
+}

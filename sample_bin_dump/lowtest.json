@@ -1,0 +1,14 @@
+{
+  "pipeline_name": "demo-pipeline",
+  "version": "1.0.0",
+  "stages": [
+    {
+      "name": "build",
+      "type": "build"
+    }
+  ],
+  "settings": {
+    "environment": "prod",
+    "notify": true
+  }
+}
