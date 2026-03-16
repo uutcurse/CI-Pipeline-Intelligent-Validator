@@ -1,0 +1,28 @@
+{
+  "pipeline_name": "",
+  "version": "one.two.three",
+  "stages": [
+    {
+      "name": "build"
+    },
+    {
+      "type": "deploy",
+      "timeout": -5,
+      "retry": 10
+    }
+  ],
+  "settings": {
+    "environment": "production",
+    "notify": "yes",
+    "max_parallel": 0
+  },
+  "extra_data": {
+    "nested": {
+      "deep": {
+        "very_deep": {
+          "value": "test"
+        }
+      }
+    }
+  }
+}
